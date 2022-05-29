@@ -1,0 +1,471 @@
+body{
+	height : 125vh;
+	background-size: cover;
+	font-family : sans-serif;
+}
+
+nav{
+	
+	display : flex;
+	align-items: center;
+	justify-content: space-between;
+	height : 100px;
+	background-color: white;
+
+}
+nav *{
+	display: inline;
+	background-color: white;
+}
+
+nav li {
+	margin : 30px;
+	background-color: white;
+
+}
+nav li a {
+	color : #999999;
+	text-decoration: none;
+	font-size: 20px;
+	
+}
+button{
+	height : 50px;
+	font-size: 30px;
+	font-style: sans-serif;
+	background-color :black;
+	color: white;
+
+}
+
+header{
+	height : 500px;
+	display: flex;
+	flex-direction: column;
+	align-items : center;
+	justify-content: center;
+	background-image: url("https://media.istockphoto.com/photos/abstract-futuristic-background-with-a-pedestal-picture-id1311473275?b=1&k=20&m=1311473275&s=170667a&w=0&h=TQrpH65THptzwZHrMLx6Z5ItaG3aG2rCIYNt8l59NQk=");
+	background-repeat: no-repeat;  
+	background-size: 1300px 500px;
+	background-position: center;
+	color : white;
+}
+.title {
+	font-size : 50px;
+}
+#learn a{
+	
+	text-decoration: none;
+	color : white;
+}
+#learn{
+	margin-top : 20px;
+	border-color: white;
+}
+.about{
+	background : url("https://wallpaperaccess.com/full/2887457.jpg") center;
+	height : 500px;
+	display : flex;
+	margin-top : 60px;
+	width : 1300px;
+	background-size: 1300px 500px;
+	background-position: center;
+	justify-content: center;
+	overflow : hidden;
+	margin-left : 20px;
+}
+.inner-container{
+	padding-right: 300px;
+	padding-left:300px;
+	float : right;
+	background :url("https://img.freepik.com/free-vector/diagonal-motion-lines-white-background_1017-33198.jpg?w=2000") center;
+	background-size : 1000px 1000px;
+	border : grey;
+	transition: transform .5s ease;
+}
+.text {
+	margin-top : 50px;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.inner-container:hover {
+  transform: scale(1.2);
+}
+
+.work{
+	display : flex;
+	margin-left : 20px;
+	margin-top : 60px;
+	margin-right: 10px;
+}
+img{
+	margin-top : 10px;
+	margin-right : 10px;
+	margin-left : 10px;
+	width : 400px;
+	border-radius : 12px;
+	background-image : url("https://wallpaperaccess.com/full/2887457.jpg");
+	border: 1px solid #bacdd8;
+	border-radius: 12px;
+}
+.work-1 {
+	margin-right : 20px;
+	background-image : url("https://wallpaperaccess.com/full/2887457.jpg");
+	background-size: 500px 300px;
+	color : white;
+}
+.work-next .work-1{
+	background-image : url("https://wallpaperaccess.com/full/2887457.jpg");
+	background-size: 500px 300px;
+	color : white;
+	margin-right : 20px;
+	width : 420px;
+	margin-top : 20px;
+}
+
+.tag {
+  margin-left : 20px;
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  width : 110px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+}
+.name{
+	font-size: 24px;
+  font-weight: 600;
+ margin-left : 20px;
+  margin-top: 16px;
+}
+.desc{
+	margin-left : 20px;
+	text-align : justify;
+}
+.content{
+	text-align: center;
+	margin-top : 60px;
+	background-image : url("https://wallpaperaccess.com/full/2887457.jpg");
+	color : white;
+	padding-bottom: 60px;
+}
+.contact{
+	position : relative;
+	display : flex;
+	justify-content: space-around;
+	background-image : url("https://wallpaperaccess.com/full/2887457.jpg");
+	padding-top :50px;
+}
+.contact-info{
+	color: white;
+}
+.icon{
+	height : 50px;
+	width : 50px;
+	position : relative;
+	right : 90px;
+	bottom : 80px;
+}
+.Form {
+	height : 435px;
+	width : 435px;
+	background-color: white;
+	
+}
+.Form .input-box{
+	position :relative;
+	width : 100%;
+	margin-top : 10px;
+	width : 400px;
+}
+
+.Form .input-box input,
+.Form .input-box textarea
+{
+	width : 100%;
+	padding : 5px 0;
+	font-size : 16px;
+	margin : 10px 0;
+	border : none;
+	border-bottom : 2px solid #333;
+	outline : none;
+	resize : none;
+}
+
+.Form .input-box span {
+	position : absolute;
+	left : 0;
+	padding: 5px 0;
+	font-size : 16px;
+	margin : 10px 0;
+	pointer-events : none;
+	transition : 0.5s;
+	color : #666;
+}
+
+.Form .input-box input:focus ~ span,
+.Form .input-box input:valid ~ span,
+.Form .input-box textarea:focus ~ span,
+.Form .input-box textarea:valid ~ span
+ {
+	color : #e91e63;
+	font-size : 12px;
+	transform : translateY(-20px);
+}
+
+.Form .input-box input[type='submit']{
+width : 100px;
+background : #00bcd4;
+color : #fff;
+border : none;
+cursor : pointer;
+padding : 10px;
+font-size : 18px;
+}
+@media (max-width : 991px){
+	.contact{
+		padding : 50px;
+		display : flex;
+		flex-direction: column;
+	}
+	.contact-info{
+		width : 100%;
+		margin-left : 90px;
+	}
+	.Form {
+		width : 100%;
+	}
+	
+
+}
+@media (max-width : 991px){
+	.work{
+		display : flex;
+		flex-direction: column;
+	}
+}
+@media (max-width : 991px){
+	.about{
+		width : 100%;
+		height :auto;
+	}
+}
+.content {
+	padding : 30px;
+}
+.send-message, .input-box{
+	margin-left : 30px;
+
+}
+@media (max-width : 991px){
+	.contact-us {
+		display: none;
+	}
+}
+.toggle_button{
+	position : absolute;
+	top : 0.75rem;
+	right : 1rem;
+	display : none;
+	flex-direction : column;
+	justify-content : space-between;
+	width : 30px;
+	height : 21px;
+}
+.toggle_button .bar{
+	height : 3px;
+	width : 100%;
+	background-color : black;
+	border-radius: 10px;
+}
+
+@media (max-width : 991px){
+	nav{
+		display : flex;
+		flex-direction: column;
+	}
+	.Form .input-box {
+		width : auto;
+	}
+
+ .nav_links  ul {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background: none;
+    text-align: center;
+
+  }
+  #learn{
+  	position : relative;
+  	top : 100px;
+  }
+  
+  .toggle_button{
+  	display: flex;
+  }
+  .hide{
+	display : none;
+}
+ nav li a{
+ 	position: absolute;
+ 	z-index : 1;
+ }
+ .title {
+ 	text-align: center;
+ }
+ #learn{
+ 	display: none;
+ }
+ 
+ 
+ .line1{
+ 	text-align: center;
+ 	margin-top :38px;
+ }
+ .inner-container{
+ 	height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+    transition : none;
+ }
+ .inner-container:hover {
+  transform: scale(1);
+}
+ .logo-image{
+ 	float : left;
+ 	margin-right : 40px;
+ }
+ .comp-name1,.comp-name2{
+ 	margin-right: 40px;
+ 	 }
+}
+
+.team{
+	display : flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top : 40px;
+	background-image: url("https://static.vecteezy.com/system/resources/thumbnails/007/494/611/small_2x/light-gray-background-with-circles-vector.jpg");
+	width : 100%;
+	margin-left : 20px;
+	margin-right: 20px;
+	background-repeat: no-repeat;
+	background-size : 1300px 560px;
+	padding-top : 60px;
+	height : 500px;
+}
+
+.p_image{
+	border : 2px solid black;
+	border-radius: 50%;
+	width : 160px;
+	height : 250px;
+	margin-bottom: 8px;
+}
+.person{
+background-color: #468ec19e;
+    width: 400px;
+    height: 481px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .5s ease;
+    color: #fbf9f9;
+    margin-top: -25px;
+}
+.team .person:hover{
+	transform: scale(1.1);
+}
+.our-work, .our-team{
+	text-align: center;
+	margin-top : 30px;
+	font-size : 50px;
+	font-family: 'Trochut', cursive;
+}
+.work-but{
+	position : relative;
+	left : 20px;
+	margin-top : 20px;
+	border : 	#808080 solid 2px;
+	display : none;
+}
+.contactus{
+	font-size : 40px;
+	
+}
+.hello{
+	font-size : 30px;
+	font-family: 'Kaushan Script', cursive;
+}
+.line1{
+	font-size : 20px;
+}
+.x {
+	font-size : 20px;
+	text-align: justify;
+}
+.who {
+	font-family: 'Trochut', cursive;
+	text-align: center;
+}
+.logo{
+	display: flex;
+	flex-direction: column;
+	height : 100px;
+}
+.logo-image{
+	width :60px;
+	height : 60px;
+	border-radius : 0%;
+	z-index : 1;
+	margin-left : 30px;
+	margin-bottom: 20px;
+	position : relative ;
+	bottom : 30px;
+	right : 30px;
+	top : 10px;
+}
+.comp-name1{
+	margin-top: -54px;
+    position: relative;
+    left: 82px;
+    bottom: 20px;
+    font-size: 30px;
+}
+.comp-name2{
+	position: relative;
+    left: 80px;
+    bottom: 66px;
+    right: 22px;
+    font-size: 30px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.whatsapp{
+	text-decoration: none;
+	color : white;
+}
+.contact-us a{
+	text-decoration: none;
+	color : white;
+	background-color : black;
+}
+.work-next{
+	display : flex;
+	flex-wrap : wrap;
+}
+.icon-1{
+	position: relative;
+    left: 9px;
+    bottom: -5px;
+    width: 30px;
+    height: 30px;
+}
+.journey{
+	text-align: center;
+
+}
